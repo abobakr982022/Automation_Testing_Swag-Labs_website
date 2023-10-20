@@ -17,7 +17,7 @@ public class test {
         Thread.sleep(2000);
         String title = driver.getTitle();
         String url = driver.getCurrentUrl();
-        System.out.println("url & title "+url + title);
+        System.out.println("url & titles "+url + title);
         driver.quit();
     }
 }

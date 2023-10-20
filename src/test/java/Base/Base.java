@@ -20,6 +20,8 @@ public class Base {
         webDriver.get("https://www.saucedemo.com/");
         webDriver.manage().window().maximize();
         Thread.sleep(2000);
+        Thread.sleep(2000);
+
         System.out.println(webDriver);
     }
     @AfterClass

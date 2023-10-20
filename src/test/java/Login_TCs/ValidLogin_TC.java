@@ -9,10 +9,12 @@ Base base = new Base();
     LoginPage loginPage = new LoginPage(base.webDriver);
 
     @Test
-    public void ValidLogin(){
-System.out.println("webdrivers is " +base.webDriver);
+    public void ValidLogin() throws InterruptedException {
+        System.out.println("webdrivers is " +base.webDriver);
+        System.out.println("webdrivers is " +new LoginPage(base.webDriver));
         loginPage.InsertUsername();
         loginPage.InsertPassword();
+        Thread.sleep(3000);
     }
 
 }
