@@ -11,13 +11,24 @@ public class LoginPage {
         this.webDriver = webDriver;
     }
 
-    public void InsertUsername() {
+    public void InsertUsername(String username) {
         By insertUsername = By.id("user-name");
-        webDriver.findElement(insertUsername).sendKeys("standard_user");
+        webDriver.findElement(insertUsername).sendKeys(username);
     }
-    public void InsertPassword() {
+    public void InsertPassword(String password) {
         By insertPassword = By.id("password");
-        webDriver.findElement(insertPassword).sendKeys("secret_sauce");
-
+        webDriver.findElement(insertPassword).sendKeys(password);
+    }
+    public void ClickOnLoginButton() {
+        By click_on_login_button= By.id("login-button");
+        webDriver.findElement(click_on_login_button).click();
+    }
+    public String Assertion_validLogin(){
+        String validation =webDriver.findElement(By.cssSelector("span[class='title']")).getText();
+        return validation;
+    }
+    public String Assertion_InvalidLogin(){
+        String validation =webDriver.findElement(By.cssSelector("h3[data-test='error']")).getText();
+        return validation;
     }
 }

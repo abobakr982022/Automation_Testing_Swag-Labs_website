@@ -2,9 +2,10 @@ package Login_TCs;
 
 import Base.Base;
 import Pages.LoginPage;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ValidLogin_TC extends Base {
+public class TC1_ValidLogin extends Base {
 Base base = new Base();
     LoginPage loginPage = new LoginPage(base.webDriver);
 
@@ -12,9 +13,13 @@ Base base = new Base();
     public void ValidLogin() throws InterruptedException {
         System.out.println("webdrivers is " +base.webDriver);
         System.out.println("webdrivers is " +new LoginPage(base.webDriver));
-        loginPage.InsertUsername();
-        loginPage.InsertPassword();
+        loginPage.InsertUsername("standard_user");
+        loginPage.InsertPassword("secret_sauce");
+        Thread.sleep(1000);
+        loginPage.ClickOnLoginButton();
         Thread.sleep(3000);
+        Assert.assertEquals("Products",loginPage.Assertion_validLogin(),"Login doesn't complete");
+
     }
 
 }
