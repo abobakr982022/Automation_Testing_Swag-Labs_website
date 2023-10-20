@@ -1,8 +1,7 @@
 package Login_TCs;
 
 import Base.Base;
-import Pages.LoginPage;
-import org.openqa.selenium.By;
+import Pages.LoginandLogout.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

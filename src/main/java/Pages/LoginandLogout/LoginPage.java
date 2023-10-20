@@ -1,4 +1,4 @@
-package Pages;
+package Pages.LoginandLogout;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -27,7 +27,8 @@ public class LoginPage {
         String validation =webDriver.findElement(By.cssSelector("span[class='title']")).getText();
         return validation;
     }
-    public String Assertion_InvalidLogin(){
+    public String Assertion_InvalidLogin() throws InterruptedException {
+        Thread.sleep(2000);
         String validation =webDriver.findElement(By.cssSelector("h3[data-test='error']")).getText();
         return validation;
     }
