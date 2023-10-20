@@ -12,8 +12,7 @@ public class TC7_AddToCartButtonToRemoveButton extends Base {
     public void ToRemoveButtonAssertion() throws InterruptedException {
          System.out.println(new AddToCartFunction(base.webDriver));
          addToCartFunction.AddToCartButtonClick(1);
-         Assert.assertEquals("Remove" +
-                 "",addToCartFunction.ButtonIsConvertToRemove(1));
+         Assert.assertEquals("Remove",addToCartFunction.ButtonIsConvertToRemove(1,1));
          Thread.sleep(1500);
      }
 

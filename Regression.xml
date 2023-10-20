@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+
+    <test name="Regression1">
+        <classes>
+            <class name="ProductPage.AddToCartButton.TC3_add_to_cart_is_displayed"/>
+            <class name="ProductPage.AddToCartButton.TC4_add_to_cart_is_Enabled"/>
+            <class name="ProductPage.AddToCartButton.TC5_add_to_cart_is_Text"/>
+            <class name="ProductPage.AddToCartFunction.TC6_AddToCartFunction"/>
+            <class name="ProductPage.AddToCartFunction.TC7_AddToCartButtonToRemoveButton"/>
+            <class name="Cart_TCs.Remove_From_Cart"/>
+            <class name="CheckOut.Checkout_TC"/>
+        </classes>
+    </test>
+</suite>
