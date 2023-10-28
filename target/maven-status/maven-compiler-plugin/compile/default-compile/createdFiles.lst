@@ -1,0 +1,8 @@
+Pages\LoginandLogout\LoginPage.class
+Pages\LoginandLogout\LogoutPage.class
+Pages\CartPage\Remove_Item_From_Cart.class
+Pages\CartPage\Nav_To_Cart.class
+Pages\ProductPage\AddToCartFunction.class
+Pages\CheckOut\Checkout.class
+Pages\test.class
+Pages\ProductPage\AddToCartButtonExistence.class

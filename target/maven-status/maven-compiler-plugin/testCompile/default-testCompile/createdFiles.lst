@@ -1,0 +1,10 @@
+ProductPage\AddToCartButton\TC3_add_to_cart_is_displayed.class
+CheckOut\Checkout_TC.class
+ProductPage\AddToCartButton\TC5_add_to_cart_is_Text.class
+Login_TCs\TC1_ValidLogin.class
+Login_TCs\TC2_inValidLogin.class
+ProductPage\AddToCartFunction\TC7_AddToCartButtonToRemoveButton.class
+Cart_TCs\Remove_From_Cart.class
+Base\Base.class
+ProductPage\AddToCartButton\TC4_add_to_cart_is_Enabled.class
+ProductPage\AddToCartFunction\TC6_AddToCartFunction.class
